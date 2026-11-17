@@ -3,7 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Catalogo</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>AutoTech</h1>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./catalogo.html">Catálogo</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Catálogo de Autos</h2>
+      <form id="controles" class="controles" role="search">
+        <section class="campo">
+          <label for="busqueda">Buscar modelo</label>
+          <input id="busqueda" type="search" placeholder="Ej: Impreza" />
+        </section>
+        <section class="campo">
+          <label for="orden">Ordenar por nombre</label>
+          <select id="orden">
+            <option value="az">A → Z</option>
+            <option value="za">Z → A</option>
+          </select>
+        </section>
+      </form>
+
+      <p id="estado">Cargando vehiculos...</p>
+      <section id="catalogo" class="grid"></section>
+    </main>
+    <footer>
+      <p>AutoTech</p>
+      <p>Instagram: @autotech</p>
+      <p>© 2026</p>
+    </footer>
+    <script type="module" src="/src/catalogo.js"></script>
+  </body>
 </html>
