@@ -21,7 +21,10 @@ body {
 header {
   background-color: var(--color-principal);
   color: white;
-  padding: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
@@ -77,6 +80,40 @@ main {
 .btn:hover {
   background-color: #1d4ed8;
   transition: 0.3s;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo label {
+  font-weight: bold;
+}
+
+.campo input,
+.campo select {
+  padding: 10px;
+  min-width: 250px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: var(--color-secundario);
 }
 
 .grid {
