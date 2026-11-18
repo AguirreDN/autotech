@@ -17,3 +17,12 @@ No es necesario usar claves en las APIs.
 - Búsqueda por texto, orden A->Z / Z->A y estado "sin resultados".
 - Responsive (Flexbos, Grid y media query).
 - Build con dos páginas (`index.html` y `catalogo.html`) y `base: "./"`.
+
+# Cómo ejecutarlo
+
+```bash
+npm install
+npm run dev       # servidor de desarrollo
+npm run build     # genera dist/
+npm run preview   # prueba el build
+```
