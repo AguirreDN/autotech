@@ -17,8 +17,8 @@
       <h2>Catálogo de Autos</h2>
       <form id="controles" class="controles" role="search">
         <section class="campo">
-          <label for="busqueda">Buscar marca</label>
-          <input id="busqueda" type="search" placeholder="Ej: Subaru" />
+          <label for="busqueda">Buscar modelo</label>
+          <input id="busqueda" type="search" placeholder="Ej: Impreza" />
         </section>
         <section class="campo">
           <label for="orden">Ordenar por nombre</label>
@@ -29,13 +29,13 @@
         </section>
       </form>
       <br />
-      <p id="estado">Cargando vehiculos...</p>
-      <section id="catalogo" class="grid"></section>
+      <p id="estado">Cargando modelos...</p>
+      <section id="grilla" class="grilla" aria-label="Modelos"></section>
     </main>
     <footer>
-      <p>API utilizada: NHTSA vPIC</p>
-      <p>Instagram: @autotech</p>
-      <p>© 2026</p>
+      <p>API utilizada:</p>
+      <p>NHTSA vPIC (datos)</p>
+      <p>Wikipedia REST (imágenes)</p>
     </footer>
     <script type="module" src="/src/catalogo.js"></script>
   </body>
